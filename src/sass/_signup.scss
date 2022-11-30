@@ -1,0 +1,24 @@
+.sign_up {
+    margin:0 200px !important;
+    form {
+        #check_box {
+            font-size: 14px;
+
+            .security_regular {
+                text-decoration: none;
+                color: #fff;
+                transition: .5s;
+
+                &:hover {
+                    color: #ff0000;
+                }
+
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px) {
+    .sign_up{
+        margin:0 !important;
+    }
+}

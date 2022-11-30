@@ -1,0 +1,44 @@
+.contact_page {
+    background-image: linear-gradient(to right, rgb(12, 21, 26), rgba(0, 0, 0, 0.69)), url(../img/best-series.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+
+    .contact_header {
+        h1{
+            font-size:51px;
+            font-weight: bold;
+        }
+        ul {
+            li {
+                font-size: 13px;
+
+                .contact_sub_menu {
+                    text-decoration: none;
+                    transition:.5s;
+                    &:hover {
+                        color: #ff0000 !important;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.contact_form {
+  
+    #input_group{
+        input{
+            height:50px;
+            padding: 5px 20px !important;
+            background-color: transparent;
+            border-radius:0;
+            
+        }
+    }
+    
+}

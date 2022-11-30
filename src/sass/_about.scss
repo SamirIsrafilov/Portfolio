@@ -1,0 +1,20 @@
+.about_static {
+    .static_icon {
+        font-size: 60px;
+        color: #ff0000;
+    }
+
+
+}
+
+.about_info {
+    background-image: linear-gradient(to right, rgb(12, 21, 26), rgba(0, 0, 0, 0.69)), url(../img/about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+
+}
+

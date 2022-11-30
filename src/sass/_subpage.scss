@@ -1,0 +1,166 @@
+.sub_page_header {
+    background-image: linear-gradient(to right, rgb(12, 21, 26), rgba(0, 0, 0, 0.69)), url(../img/best-series.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+
+    .sub_header {
+        h1 {
+            font-size: 51px;
+            font-weight: bold;
+        }
+
+        ul {
+            li {
+                font-size: 13px;
+
+                .sub_header_menu {
+                    text-decoration: none;
+                    transition: .5s;
+
+                    &:hover {
+                        color: #ff0000 !important;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+/** Login --> Lost your Password?*/
+.reset_form {
+    form {
+        #reset_btn {
+            position: relative;
+            width: 187px !important;
+            height: 45px !important;
+            border: 0;
+            background-color: #ff0000;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+
+            &::before {
+                background-color: #333536;
+                transition: 0.5s ease-out;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                height: 100%;
+                width: 0%;
+            }
+
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+
+            span {
+                z-index: 20;
+
+                color: #fff;
+
+                &:hover {
+                    color: #fff !important;
+                }
+            }
+
+        }
+    }
+}
+
+
+/**Movies Info Start*/
+.movie_info_header {
+    background-image: url(../img/movies/movies_01.jpg);
+    height: 80vh;
+    box-shadow: inset 250px 0px 400px 150px #272829;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+  
+
+    #circle_title {
+        position: absolute;
+        bottom: 100px;
+        left: 150px;
+
+        .spinner-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .spinner-item {
+                background: #fff;
+                border: 1px solid red;
+                border-radius: 50%;
+                height: 100px;
+                width: 100px;
+                opacity: 0;
+                animation: zoom 2s linear 0.75s infinite;
+            }
+            #play_circle {
+                position: absolute;
+                width: 70px;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color: #ff0000;
+            }
+        }
+    }
+
+    @keyframes zoom {
+        0% {
+            transform:scale(0.2);
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0.9;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 0;
+        }
+    }
+
+
+
+
+}
+
+@media screen and (max-width:600px) {
+    .movie_info_header {
+        box-shadow: inset 100px 0px 200px 100px #272829;
+       
+
+        #circle_title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 100px;
+            left: 0px;
+
+            h2 {
+               
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+/** MovieInfo End*/

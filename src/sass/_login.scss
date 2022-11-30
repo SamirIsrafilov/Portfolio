@@ -1,0 +1,221 @@
+.login_page {
+    #login_form {
+        form {
+            label{
+                font-size:14px;
+            }
+            input {
+                height: 50px;
+                font-size:14px;
+
+            }
+            p{
+                font-size:14px;
+            }
+
+            #login_btn {
+
+                position: relative;
+                width: 100% !important;
+                height: 50px !important;
+                border: 0;
+                background-color: #ff0000;
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+
+                &::before {
+                    background-color: #333536;
+                    transition: 0.5s ease-out;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 0%;
+                }
+
+                &:hover {
+                    &::before {
+                        width: 100%;
+                    }
+                }
+
+                span {
+                    z-index: 20;
+
+                    color: #fff;
+
+                    &:hover {
+                        color: #fff !important;
+                    }
+                }
+
+            }
+
+            #lost_password{
+                text-decoration: none;
+                font-size:14px;
+                color: #fff;
+                transition:.5s;
+                &:hover{
+                    color: #ff0000 !important;
+                }
+            }
+            #login_social_btn{
+                #facebook_btn{
+                    position: relative;
+                    width: 100% !important;
+                    height: 45px !important;
+                    border: 0;
+                    background-color: #0254a6;
+                    display: flex !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+    
+                    &::before {
+                        background-color: #333536;
+                        transition: 0.5s ease-out;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 0%;
+                    }
+    
+                    &:hover {
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+    
+                    span {
+                        z-index: 20;
+    
+                        color: #fff;
+    
+                        &:hover {
+                            color: #fff !important;
+                        }
+                    }
+    
+                }
+                #twitter_btn{
+                    position: relative;
+                    width: 100% !important;
+                    height: 45px !important;
+                    border: 0;
+                    background-color: #00abe9;
+                    display: flex !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+    
+                    &::before {
+                        background-color: #333536;
+                        transition: 0.5s ease-out;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 0%;
+                    }
+    
+                    &:hover {
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+    
+                    span {
+                        z-index: 20;
+    
+                        color: #fff;
+    
+                        &:hover {
+                            color: #fff !important;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+
+
+/** Lost your Password?*/
+
+.reset_page {
+    background-image: linear-gradient(to right, rgb(12, 21, 26), rgba(0, 0, 0, 0.69)), url(../img/best-series.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+
+    .reset_header {
+        h1{
+            font-size:51px;
+            font-weight: bold;
+        }
+        ul {
+            li {
+                font-size: 13px;
+
+                .reset_sub_menu {
+                    text-decoration: none;
+                    transition:.5s;
+                    &:hover {
+                        color: #ff0000 !important;
+                    }
+                }
+            }
+
+        }
+    }
+   
+}
+
+
+.reset_form{
+    form{
+        #reset_btn {
+            position: relative;
+            width: 187px !important;
+            height: 45px !important;
+            border: 0;
+            background-color: #ff0000;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+
+            &::before {
+                background-color: #333536;
+                transition: 0.5s ease-out;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                height: 100%;
+                width: 0%;
+            }
+
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+
+            span {
+                z-index: 20;
+
+                color: #fff;
+
+                &:hover {
+                    color: #fff !important;
+                }
+            }
+
+        }
+    }
+}
